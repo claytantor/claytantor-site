@@ -1,25 +1,111 @@
-import logo from './logo.svg';
+import React from 'react';
+
+import SocialLinks from './components/SocialLinks'
+import DesignProjects from './components/DesignProjects'
+import TechnologyAreas from './components/TechnologyAreas'
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home />
     </div>
   );
 }
+
+
+let Home = () => {
+
+  let currentYear = () => {
+    let d = new Date(); 
+    return d.getFullYear(); 
+  };
+
+  return (
+    <>
+
+      <section className="container">
+        <div className="bg-dark text-white d-flex flex-wrap justify-content-between py-3">
+          <a href="/" className="d-flex align-items-left mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <span className="text-white word-logo">@claytantor</span>
+          </a>
+
+          <ul className="nav nav-pills mr-2">
+            <li className="nav-item"><a href="/" className="nav-link active">Home</a></li>
+            <li className="nav-item"><a href="https://claytantor.medium.com" className="nav-link">Articles</a></li>
+          </ul>
+        </div>
+      </section>
+
+
+      <header>
+        <div className="header-content container d-inline-flex p-2 justify-content-end bd-highlight">
+          <div className="p-2">
+            <h1>Technology, Design, Doing</h1>
+            <p>Clay Graham is a software architect, designer of virtual and real things, artist, and lifelong maker. He is self motivated, passionate and driven towards seeing possibilities become realities. Doing is essential to Clay's ethos, to him it is what differentiates those who make a difference in the world from those who dream.</p>
+            {/* <a href="#about" className="btn btn-primary btn-xl page-scroll m-3">Find Out More</a> */}
+          </div>
+        </div>
+      </header>
+
+      <section className="section-about text-white" id="about">
+        <div className="container container-section">
+          <div className="row">
+            <div className="text-center p-3">
+              <h2 className="section-heading">Actions speak louder than words.</h2>
+              <p className="text-faded about-quote"><em>"It is important for me to lead by doing. You can't really make something happen unless you are willing to understand it authentically, capable of going beyond the surface and into the intimate. Only by comprehending the truth in the details can something be transformed from an idea into a reality."</em></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-skills text-white" id="skills">
+        <div className="row">
+          <div className="col-lg-12 text-center p-3">
+            <h2 className="section-heading">Technology</h2>
+
+            <TechnologyAreas/>
+
+          
+          </div>   
+        </div>     
+        
+      
+      </section>
+
+      <section className="section-design text-white" id="portfolio">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center p-3">
+              <h2 className="section-heading">Design</h2>
+              <DesignProjects/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-social text-white" id="social">
+        <div className="container container-section">
+          <div className="row">
+            <div className="col-lg-12 text-center p-3 ">
+              <h2 className="section-heading">Doing</h2>
+              <p>If you are trying to figure out if my words match my deeds, some of this may help you. If you don't care about me and came here for another reason, then I hope this helps you anyway.</p>
+            </div>
+            <div className="col-lg-12 text-center">
+              <SocialLinks/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="footer mt-auto py-3 bg-dark text-white">
+        <div className="container">
+          <span className="text-white">&copy; Copyright {currentYear()}, Clay Graham (aka @claytantor)</span>
+        </div>
+      </footer>
+    </>)
+};
+
 
 export default App;
