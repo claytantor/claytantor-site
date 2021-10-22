@@ -1,8 +1,10 @@
 import React from 'react';
 
 import SocialLinks from './components/SocialLinks'
+import PayBitcoin from './components/PayBitcoin'
 import DesignProjects from './components/DesignProjects'
 import TechnologyAreas from './components/TechnologyAreas'
+import CopyClipboard from './components/CopyClipboard'
 
 import './App.css';
 
@@ -33,7 +35,7 @@ let Home = () => {
 
           <ul className="nav nav-pills mr-2">
             <li className="nav-item"><a href="/" className="nav-link active">Home</a></li>
-            <li className="nav-item"><a href="https://claytantor.medium.com" className="nav-link">Articles</a></li>
+            <li className="nav-item"><a href="https://claytantor.wordpress.com" className="nav-link">Blog</a></li>
           </ul>
         </div>
       </section>
@@ -44,7 +46,6 @@ let Home = () => {
           <div className="p-2">
             <h1>Technology, Design, Doing</h1>
             <p>Clay Graham is a software architect, designer of virtual and real things, artist, and lifelong maker. He is self motivated, passionate and driven towards seeing possibilities become realities. Doing is essential to Clay's ethos, to him it is what differentiates those who make a difference in the world from those who dream.</p>
-            {/* <a href="#about" className="btn btn-primary btn-xl page-scroll m-3">Find Out More</a> */}
           </div>
         </div>
       </header>
@@ -94,6 +95,19 @@ let Home = () => {
             </div>
             <div className="col-lg-12 text-center">
               <SocialLinks/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-bitcoin text-white" id="bitcoin">
+        <div className="container container-section">
+          <div className="row">
+            {/* <div className="col-lg-12 text-center p-3 ">
+              <CopyClipboard/>
+            </div> */}
+            <div className="col-lg-12 text-center">
+              <PayBitcoin/>
             </div>
           </div>
         </div>

@@ -36,11 +36,11 @@ let SocialLinks = () => {
         image: imgGithub,
         link: "https://github.com/claytantor"
       }, 
-      {
-        name: "Instagram",
-        image: imgInsta,
-        link: "https://www.instagram.com/claytantor"
-      },         
+      // {
+      //   name: "Instagram",
+      //   image: imgInsta,
+      //   link: "https://www.instagram.com/claytantor"
+      // },         
       
     ];
     const listItems = items.map((item) =>

@@ -46,13 +46,16 @@ header {
   padding: 5pc;
   text-align: center;
   color: #fff;
-  background-image: url(./img/header_clay.png);
+  background-image: url(./img/header_clay_med.png);
+  background-color: #444;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
+
+
 
 header .header-content {
   position: relative;
@@ -120,9 +123,26 @@ header .header-content {
   list-style: none;
   width: 90px;
   height: 70px;
-  margin: 5px;
+  margin: 20px;
   padding: 5px;
   transition: transform 250ms;
+}
+
+.copy-clipboard {
+  width:100%;
+}
+
+.address-field {
+  border: 2px solid #eee;
+  width: 370px;
+  padding: 10px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.bitcoin-img {
+  width: 256px;
 }
 
 
@@ -131,12 +151,18 @@ header .header-content {
 }
 
 .social-img {
-  margin-top: 5px;
+  margin-top: 25px;
   width: 64px;
   width: 64px;
 }
 
 @media(min-width:968px) {
+  header {
+    background-image: url(./img/header_clay_med.png);
+    background-size: 850px;
+    background-repeat: no-repeat;
+  }
+
   header .header-content {
     position: relative;
     width: 40pc;
