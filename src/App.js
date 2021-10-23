@@ -4,7 +4,6 @@ import SocialLinks from './components/SocialLinks'
 import PayBitcoin from './components/PayBitcoin'
 import DesignProjects from './components/DesignProjects'
 import TechnologyAreas from './components/TechnologyAreas'
-import CopyClipboard from './components/CopyClipboard'
 
 import './App.css';
 
@@ -33,9 +32,9 @@ let Home = () => {
             <span className="text-white word-logo">@claytantor</span>
           </a>
 
-          <ul className="nav nav-pills mr-2">
-            <li className="nav-item"><a href="/" className="nav-link active">Home</a></li>
+          <ul className="nav nav-pills ml-2">
             <li className="nav-item"><a href="https://claytantor.wordpress.com" className="nav-link">Blog</a></li>
+            <li className="nav-item"><a href="https://claytantor.wordpress.com/services/" className="nav-link">Services</a></li>
           </ul>
         </div>
       </section>
@@ -44,8 +43,8 @@ let Home = () => {
       <header>
         <div className="header-content container d-inline-flex p-2 justify-content-end bd-highlight">
           <div className="p-2">
-            <h1>Technology, Design, Doing</h1>
-            <p>Clay Graham is a software architect, designer of virtual and real things, artist, and lifelong maker. He is self motivated, passionate and driven towards seeing possibilities become realities. Doing is essential to Clay's ethos, to him it is what differentiates those who make a difference in the world from those who dream.</p>
+            <h1 className="section-heading">Technology, Design, Doing</h1>
+            <p className="burb-header">Clay Graham is a software architect, designer of virtual and real things, artist, and lifelong maker. He is self motivated, passionate and driven towards seeing possibilities become realities. Doing is essential to Clay's ethos, to him it is what differentiates those who make a difference in the world from those who dream.</p>
           </div>
         </div>
       </header>

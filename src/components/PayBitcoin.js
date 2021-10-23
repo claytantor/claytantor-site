@@ -1,15 +1,14 @@
 import React from 'react';
 import CopyClipboard from './CopyClipboard'
 import imgBitcoin from '../img/pay_bc_512.png';
+import imgCoinbase from '../img/pay_coinbase.png';
 
 let PayBitcoin = () => { 
     return(<>
-        <div className="d-flex flex-wrap justify-content-center mb-3">
-        <CopyClipboard/>
-      </div> 
-      <div className="d-flex flex-wrap justify-content-center mb-3">
-        <img className="bitcoin-img" src={imgBitcoin} alt="pay with bitcoin" />
-      </div> 
+    
+    <button class="button-coinbase" onClick={() => {
+      window.open('https://commerce.coinbase.com/checkout/c86a2ce6-bfff-4806-bc10-ab0a5dc10153', '_blank')}}>Pay @claytantor With Crypto</button>
+
     </>);
   };
 

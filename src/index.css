@@ -1,13 +1,15 @@
+
+/* font-family: 'Arvo', serif;
+font-family: 'Titillium Web', sans-serif; */
 body {
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;  
+  font-family: 'Titillium Web', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .border-white {
@@ -37,6 +39,8 @@ code {
     font-size: 3.5rem;
   }
 }
+
+
 
 
 header {
@@ -179,8 +183,73 @@ header .header-content {
 
 }
 
+.burb-header {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-left: 20px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
 .about-quote {
-  font-family: 'Goudy Bookletter 1911', serif;
+  font-family: 'Titillium Web', sans-serif;
   color: #fff;
   font-size: x-large;
 }
+
+.section-tech {
+  font-family: 'Arvo', sans-serif;
+  color: #fff;
+}
+
+.section-heading {
+  font-family: 'Arvo', sans-serif;
+  color: #fff;
+  font-size: 2.6rem;
+}
+
+input[type="button"] {
+  border: 0px solid #eee;
+  border: none;
+  outline: none;
+}
+
+.button-coinbase {
+  border: 0px solid #eee;
+  border-radius: 15px;
+  background-color: #3f4ef6; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  outline: none;
+}
+
+.button-coinbase:hover {
+  border: 0px solid #eee;
+  background-color: #4b8aff; /* Green */
+  color: white;
+  border: none;
+  outline: none;
+}
+
+
+.button-coinbase:active {
+  border: 0px solid #eee;
+  background-color: #4b8aff; /* Green */
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.button-coinbase:focus {
+  border: 0px solid #eee;
+  background-color: #4b8aff; /* Green */
+  color: white;
+  border: none;
+  outline: none;
+}
+
