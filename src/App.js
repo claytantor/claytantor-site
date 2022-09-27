@@ -1,9 +1,10 @@
 import React from 'react';
 
 import SocialLinks from './components/SocialLinks'
-import PayBitcoin from './components/PayBitcoin'
+import PayModalReact from './components/PayBitcoin'
 import DesignProjects from './components/DesignProjects'
 import TechnologyAreas from './components/TechnologyAreas'
+
 
 import './App.css';
 
@@ -106,11 +107,13 @@ let Home = () => {
               <CopyClipboard/>
             </div> */}
             <div className="col-lg-12 text-center">
-              <PayBitcoin/>
+              <PayModalReact/>
             </div>
           </div>
         </div>
       </section>
+
+
 
       <footer className="footer mt-auto py-3 bg-dark text-white">
         <div className="container">

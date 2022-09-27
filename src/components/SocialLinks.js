@@ -5,7 +5,6 @@ import imgTwitter from '../img/twitter-256.png';
 import imgOpenSea from '../img/opensea-256.png';
 import imgLinkedIn from '../img/in-logo-256.png';
 import imgGithub from '../img/octocat-256.png';
-import imgInsta from '../img/insta-256.png';
 import imgMedium from '../img/medium-256.png';
 
 
@@ -43,8 +42,8 @@ let SocialLinks = () => {
       // },         
       
     ];
-    const listItems = items.map((item) =>
-        <div className="social-list-li">
+    const listItems = items.map((item, index) =>
+        <div className="social-list-li" key={index}>
           <a href={item.link} target="_new">
             <img className="social-img" src={item.image} alt={item.name} />
             <span>{item.name}</span>

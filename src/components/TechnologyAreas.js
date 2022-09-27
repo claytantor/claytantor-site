@@ -7,7 +7,7 @@ let TechnologyAreas = () => {
 
     return (<>
     
-        <div class="d-flex flex-wrap justify-content-center">
+        <div className="d-flex flex-wrap justify-content-center">
                 
 
             <div className="p-2 m-2 border-white technology-list-li">

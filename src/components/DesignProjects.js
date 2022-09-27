@@ -36,8 +36,8 @@ let DesignProjects = () => {
       },         
       
     ];
-    const listItems = projects.map((item) =>
-        <div className="project-list-li">
+    const listItems = projects.map((item, index) =>
+        <div className="project-list-li" key={index}>
           <a href={item.link} target="new">
             <img className="project-img" src={item.image} alt={item.name} />
             <h5 className="mt-1">{item.name}</h5>
