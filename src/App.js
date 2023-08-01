@@ -8,9 +8,10 @@ import TechnologyAreas from './components/TechnologyAreas'
 
 import './App.css';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
+    <div className="bg-slate-500">
+      Foo
       <Home />
     </div>
   );
@@ -28,10 +29,11 @@ let Home = () => {
     <>
 
       <section className="container">
-        <div className="bg-dark text-white d-flex flex-wrap justify-content-between py-3">
+        <div className="bg-dark text-white d-flex flex-wrap justify-content-between py-3"> 
           <a href="/" className="d-flex align-items-left mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <span className="text-white word-logo">@claytantor</span>
+            <span className="text-white word-logo">@claytantor YA</span> ROO ZAM jjj
           </a>
+          TA HOO HA MA JA JJAP LOOK AT ME I AM A NAV BAR ZOOM ZOOM BOOB LAMA POOK WOMB POPS POOG
 
           <ul className="nav nav-pills ml-2">
             <li className="nav-item"><a href="https://claytantor.wordpress.com" className="nav-link">Blog</a></li>
@@ -49,6 +51,17 @@ let Home = () => {
           </div>
         </div>
       </header>
+
+
+      <section className="section-about text-white" id="about">
+        <div className="container container-section">
+          <div className="row">
+            <div className="text-center p-3">
+              <h2 className="section-heading">Just The Links</h2>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="section-about text-white" id="about">
         <div className="container container-section">
@@ -123,5 +136,3 @@ let Home = () => {
     </>)
 };
 
-
-export default App;

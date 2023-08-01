@@ -1,20 +1,56 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import './darkster_theme.min.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { createRoot } from "react-dom/client";
+import { App } from "./App";
+import { AppContainer } from 'react-hot-loader'
+
+import "./styles.css";
 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// const render = Component => {
+//   ReactDOM.render(
+//     <AppContainer>
+//       <Component />
+//     </AppContainer>,
+//     document.getElementById('app')
+//   )
+// }
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// render(App)
+
+// if (module.hot) {
+//   // module.hot.accept();
+//   console.log("module.hot.accept");
+//   module.hot.accept('./App', () => { render(App) })
+// } else {
+//   console.log("no module.hot.accept");
+// }
+
+const renderHot = Component => {
+  const container = document.getElementById("app");
+  const root = createRoot(container)
+  root.render(<AppContainer><Component /></AppContainer>);
+}
+
+const container = document.getElementById("app");
+const root = createRoot(container)
+root.render(<AppContainer><App /></AppContainer>);
+
+// const renderHot = Component => {
+//   const container = document.getElementById("app");
+//   const root = createRoot(container)
+//   root.render(<><Component /></>);
+// }
+
+// const container = document.getElementById("app");
+// const root = createRoot(container)
+// root.render(<><App /></>);
+
+
+if (module.hot) {
+  // module.hot.accept(); 
+  console.log("module.hot.accept");
+  module.hot.accept('./App', () => { renderHot(App) })
+} else {
+  console.log("no module.hot.accept");
+}
